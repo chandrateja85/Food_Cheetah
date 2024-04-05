@@ -1,0 +1,35 @@
+{
+  "name": "food_cheetah",
+  "version": "1.0.0",
+  "description": "This is the food ordering app which  delivers the quality and delicious food, fast and at reasonable prices.customers satisfaction is our happiness.",
+  "main": "index.html",
+  "scripts": {
+    "test": "jtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandrateja85/Food_Cheetah.git"
+  },
+  "keywords": [
+    "Food",
+    "Ordering",
+    "App",
+    "React",
+    "Framework",
+    "Beautiful",
+    "UI"
+  ],
+  "author": "KOTHA CHANDRA TEJA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandrateja85/Food_Cheetah/issues"
+  },
+  "homepage": "https://github.com/chandrateja85/Food_Cheetah#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
