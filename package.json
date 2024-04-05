@@ -2,9 +2,10 @@
   "name": "food_cheetah",
   "version": "1.0.0",
   "description": "This is the food ordering app which  delivers the quality and delicious food, fast and at reasonable prices.customers satisfaction is our happiness.",
-  "main": "index.html",
   "scripts": {
-    "test": "jtest"
+    "test": "jtest",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   },
   "homepage": "https://github.com/chandrateja85/Food_Cheetah#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
