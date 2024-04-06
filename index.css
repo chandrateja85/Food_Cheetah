@@ -1,0 +1,117 @@
+body{
+    padding: 0px;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    margin: 0px;
+    justify-content: space-between;
+}
+.LogoPart img{
+    height: 70px;
+    border-radius: 10px;
+    margin-left:30px ;
+
+}
+.NavList{
+    color: white;
+    height: inherit;
+}
+.NavList ul{
+    display: flex;
+    padding-right: 130px;
+    place-items: center;
+
+}
+
+.NavList ul li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.NavList ul li:hover {
+    
+    cursor: pointer;
+}
+
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.Card{
+    height: 450px;
+    width: 300px;
+    display:flex;
+    flex-direction: column; 
+    margin: 5px;
+    justify-content: space-evenly;
+    background-color: #f8fcfb;
+    border-radius: 10px;
+    transition: transform .1s; /* Animation */
+
+    
+}
+.Card:hover {
+    cursor: pointer;
+    
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.FoodImg {
+    overflow: hidden;
+    padding: 10px;
+    padding-bottom: 5px;
+    height: 50%;
+}
+.FoodImg img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.Button{
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.Button:hover{
+    background-color: greenyellow;
+    
+    cursor: pointer;
+
+}
+.Description p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.Description {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+.Description h3{
+    margin-bottom: 5px;
+}
+
+
+ /* .Card img{
+    position: absolute;
+    height:50% ;
+    width: 100%;
+} */
