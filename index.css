@@ -109,6 +109,40 @@ body{
     margin-bottom: 5px;
 }
 
+.searchbar {
+    width: 400px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 10px;
+
+}
+i.fa{
+    font-size: 27px;
+    border-radius: 60px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin-top: 20px;
+}
+
+.TopRestaurants_pick_Section{
+    display: flex;
+    align-items: center;
+    
+}
+.top_restaurants_button{
+    height: 30px;
+    margin-left: 100px;
+    margin-right: 25%;
+    cursor: pointer;
+}
+.top_restaurants_button:hover {
+    background-color:palegreen;
+}
 
  /* .Card img{
     position: absolute;

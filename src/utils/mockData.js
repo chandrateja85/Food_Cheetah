@@ -1,52 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import logoimg from './images/logo.png' 
-import Chapathi from './images/Chapathi.jpeg'
-
-
-const Header = ()=>(
-    <div className="Header">
-        <div className="LogoPart">
-            <img className="logo" src={logoimg}></img>
-        </div>
-        <div className="NavList">
-            <ul>
-                
-                <li>Home</li>
-                <li>Cart</li>
-                <li>About us</li>
-                <li>Restaurant</li>
-                <li>Login</li>
-            </ul>
-        </div>
-    </div>
-
-);
-
-const urlid="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const Card = (props) => {
-    const { info } = props; // Destructuring info from props
-    return (
-        <div className="Card">
-            {console.log(info)}
-            <div className="FoodImg">
-                <img className="cardimg" src={urlid+info.cloudinaryImageId}></img>
-            </div>
-            <div className="Description">
-                <h3>{info.name}</h3>
-                <p>{info.cuisines.join(",")}</p>
-                <p>Rating:{info.avgRating}  | | Delivery Time:{info.sla.deliveryTime} Minutes</p>
-                <p>{info.locality}</p>
-                <span className="Button">
-                    Order Now
-                </span>
-            </div>
-            
-        </div>
-    );
-};
-
-const restalist=[
+export const restalist=[
     {
         "info": {
             "id": "745751",
@@ -733,35 +685,4 @@ const restalist=[
         },
         "widgetId": "collectionV5RestaurantListWidget_byName"
     }
-]
-
-
-
-
-const BodyPart = () => {
-    { console.log(restalist) }
-    return (
-        <div className="MainBody">
-            <center><h1> Top Restaurant's at Vaddeswaram 📌 </h1></center>
-            <div className="CardContainer">
-                {/* Iterate over the restalist array using map */}
-                {restalist.map((restaurant, index) => (
-                    // Render a Card component for each restaurant
-                    <Card key={index} info={restaurant.info} />
-                ))}
-            </div>
-        </div>
-    );
-};
-
-const Page =()=>(
-    <div>
-        <Header/>
-        <BodyPart/>
-    </div>
-
-);
-
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Page/>);
-
+];
