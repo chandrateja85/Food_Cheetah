@@ -686,3 +686,5 @@ export const restalist=[
         "widgetId": "collectionV5RestaurantListWidget_byName"
     }
 ];
+
+

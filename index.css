@@ -56,9 +56,7 @@ body{
     justify-content: space-evenly;
     background-color: #f8fcfb;
     border-radius: 10px;
-    transition: transform .1s; /* Animation */
-
-    
+    transition: transform .1s; /* Animation */  
 }
 .Card:hover {
     cursor: pointer;
@@ -149,3 +147,19 @@ i.fa{
     height:50% ;
     width: 100%;
 } */
+
+.shimmer_card{
+    height: 450px;
+    width: 300px;
+    background-color:#f8fcfb;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.shimmer_contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
