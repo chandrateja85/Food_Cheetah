@@ -1,13 +1,15 @@
-const SearchBar = () => {
+const SearchBar = (props) => {
+    // Destructuring props
+
+    
     return (
         <div className="search">
             <form action="#">
                 <input className="searchbar" name="search" placeholder="Search for restaurants" />
-                
             </form>
             <button>
-                    <i className="fa fa-search" id="searchicon" style={{}}></i>
-                </button>
+                Search
+            </button>
         </div>
     );
 };

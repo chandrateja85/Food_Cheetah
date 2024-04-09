@@ -37,6 +37,16 @@ body{
     
     cursor: pointer;
 }
+.NavList ul button {
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.NavList ul button:hover {
+    
+    cursor: pointer;
+}
 
 
 .CardContainer{

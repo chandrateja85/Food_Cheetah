@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import logoimg from '../../images/logo.png'
 
-const Header = ()=>(
+const Header = ()=>{
+    const[loginButton,setLoginButton]=useState("Login");
+    return(
     <div className="Header">
         <div className="LogoPart">
             <img className="logo" src={logoimg}></img>
@@ -12,11 +15,19 @@ const Header = ()=>(
                 <li>Cart</li>
                 <li>About us</li>
                 <li>Restaurant</li>
-                <li>Login</li>
+                <button className="login_button" onClick={()=>{
+                    //console.log(loginButton);
+                    // if clicked when the state variable is login then change it to log out and change vise versa
+                    if(loginButton==="Login"){
+                        setLoginButton("Logout");
+                    } 
+                    else{
+                        setLoginButton("Login");
+                    }
+                }}>{loginButton}</button>
             </ul>
         </div>
     </div>
-
-);
-
+    );
+}
 export default Header;
